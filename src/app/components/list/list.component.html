@@ -1,0 +1,13 @@
+<ul>
+    <li *ngFor="let item of items | async">
+        <h3>{{item.word}}</h3>
+        <p>{{item.wordTranslation}}</p>
+        <p class="sentence">
+            <span class="sentence-original">{{item.sentence}}</span>
+            <span class="sentence-translation">{{item.sentenceTranslation}}</span>
+        </p>
+        <p>
+            {{item.dialect}}
+        </p>
+    </li>
+</ul>
